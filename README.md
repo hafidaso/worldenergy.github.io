@@ -1,6 +1,6 @@
 # World Energy Consumption Visualized
 
-[Link to GitHub Pages](https://github.com/hafidaso/WorldEnergy.github.io)
+[Link to GitHub Pages]([https://github.com/hafidaso/WorldEnergy.github.io](https://hafidaso.github.io/worldenergy.github.io/))
 
 # Introduction
 
