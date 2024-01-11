@@ -1,0 +1,105 @@
+/* Dark-themed styling */
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    /* Dark background color */
+    color: #fff;
+    /* Light text color */
+}
+
+/* label {
+    margin-bottom: 10px;
+    color: #fff;}
+*/
+
+#yearFilter {
+    padding: 10px;
+    /* Increase padding for better visibility */
+    width: 150px;
+    /* Increase width */
+    background-color: #333;
+    /* Dark dropdown background */
+    color: #fff;
+    /* Light text color */
+    align-items: center;
+}
+
+/* Add styling for navigation buttons */
+.navigation-button {
+    position: absolute;
+    top: 20px;
+    padding: 15px 20px;
+    /* Adjusted padding for larger buttons */
+    background-color: #55aead;
+    /* Dark button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    border-radius: 8px;
+    /* Increased border radius for rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    /* Adjusted font size for larger buttons */
+}
+
+#backButton {
+    left: 20px;
+}
+
+#nextButton {
+    right: 20px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #000000;
+    /* Dark tooltip background color */
+    color: #fff;
+    /* Light text color */
+    border: 1px solid #555;
+    /* Dark border color */
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Font Awesome Icons */
+.fab {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for screens between 601px and 1024px */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Styles for screens larger than 1024px */
+}
+/* Default styles */
+nav ul li {
+    display: inline;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+}

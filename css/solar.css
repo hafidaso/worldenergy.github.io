@@ -1,0 +1,174 @@
+/* Reset some default styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #fff;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+#countrySelect {
+    padding: 10px;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    pointer-events: none; /* Ignore pointer events on the tooltip itself */
+    transition: opacity 0.3s;
+    color: #000; /* Text color */
+}
+
+/* Center the chart container */
+#chart-container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Center the chart container */
+#bc-chart-container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Add your existing styles here */
+.bar-gdp {
+    fill: steelblue;
+}
+
+.line-energy {
+    fill: none;
+    stroke: orange;
+    stroke-width: 2;
+}
+
+.dot {
+    fill: orange;
+    stroke: white;
+    stroke-width: 2;
+}
+
+.card {
+    background-color: #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Add styling for navigation buttons */
+.navigation-button {
+    position: absolute;
+    top: 20px;
+    padding: 15px 20px;
+    /* Adjusted padding for larger buttons */
+    background-color: #55aead;
+    /* Dark button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    border-radius: 8px;
+    /* Increased border radius for rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    /* Adjusted font size for larger buttons */
+}
+
+#backButton {
+    left: 20px;
+}
+
+#nextButton {
+    right: 20px;
+}
+/* Font Awesome Icons */
+.fab {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for screens between 601px and 1024px */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Styles for screens larger than 1024px */
+}
+/* Default styles */
+nav ul li {
+    display: inline;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+/* Social Media Links Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.social-media-links {
+    font-size: 1.5rem;
+}
+
+.social-media-links a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ed6f2b;
+}
+
+.tooltip {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/* Line styling */
+.line {
+    transition: stroke-width 0.3s;
+}
+
+/* Line hover effect */
+.line:hover {
+    stroke-width: 4px; /* Highlight the line on hover */
+    cursor: pointer;
+}

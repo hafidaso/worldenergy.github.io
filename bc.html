@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>D3 Bubble Chart with Year Filter</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+
+        <link rel="stylesheet" href="css/bcStyles.css">
+
+</head>
+
+<body>
+        <h1>Renewable, Non-Renewable vs GDP</h1>
+        <button id="backButton" class="navigation-button">Back</button>
+        <button id="nextButton" class="navigation-button">Next</button>
+
+        <!-- Year Filter -->
+        <label for="yearFilter">Select Year:</label>
+        <select id="yearFilter"></select>
+
+        <!-- Wrap the chart in a container div -->
+        <div id="bc-chart-container">
+                <script src="js/bc.js"></script>
+        </div>
+        <script>
+                // Back button logic
+                const backButton = document.getElementById("backButton");
+                backButton.addEventListener("click", function () {
+                        window.location.href = "Energy.html" // Go to the previous page
+                });
+
+                // Next button logic
+                const nextButton = document.getElementById("nextButton");
+                nextButton.addEventListener("click", function () {
+                        window.location.href = "cec.html"; // Navigate to cec.html
+                });
+        </script>
+
+</body>
+
+</html>

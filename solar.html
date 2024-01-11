@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="css/solar.css">
+    <title>Solar and Wind Energy Visualization</title>
+</head>
+<body>
+        <h1>Solar and Wind power Generation</h1>
+
+    <button id="backButton" class="navigation-button">Back</button>
+    <!-- <button id="nextButton" class="navigation-button">Next</button> -->
+    <div id="chart-container"></div>
+    <script src="js/sola.js"></script>
+    <script>
+        // Back button logic
+        const backButton = document.getElementById("backButton");
+        backButton.addEventListener("click", function () {
+            window.location.href = "cec.html" // Go to the previous page
+        });
+</script>
+
+</body>
+</html>

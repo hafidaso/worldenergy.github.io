@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Area Chart with Labels</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="css/cec.css">
+</head>
+
+<body>
+    <h1>Changing Energy Consumption and Type</h1>
+
+    <button id="backButton" class="navigation-button">Back</button>
+    <button id="nextButton" class="navigation-button">Next</button>
+    <!-- <button id="nextButton" class="navigation-button">Next</button> -->
+
+    <label for="countrySelect">Select Country:</label>
+    <select id="countrySelect"></select>
+
+    <!-- Wrap the chart in a container div -->
+    <div id="sac-chart-container">
+        <script src="js/cec.js"></script>
+    </div>
+
+    <script>
+    
+        
+        // Back button logic
+        const backButton = document.getElementById("backButton");
+        backButton.addEventListener("click", function () {
+            window.location.href = "bc.html" // Go to the previous page
+        });
+
+         // Next button logic
+        const nextButton = document.getElementById("nextButton");
+        nextButton.addEventListener("click", function () {
+             window.location.href = "solar.html"; // Navigate to bc.html
+         });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+}
+body {
+    background-color: #000000;
+    /* Dark background for overall page */
+    color: #fff;
+    /* Light text color */
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the Main Heading */
+#mainHeading {
+    font-family: "Roboto", sans-serif;
+    /* Use Roboto, fall back to sans-serif */
+    font-size: 2.5rem;
+    /* Large font size */
+    font-weight: 700;
+    /* 700 weight for boldness */
+    text-align: center;
+    color: #ed6f2b;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    /* Max width for better readability */
+    margin: auto;
+    /* Center aligning the container */
+}
+
+/* Dropdown Label Styles */
+label[for="yearDropdown"] {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Dropdown Styles */
+#yearDropdown {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding for better usability */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: 1px solid #af8c4c;
+    /* Border color */
+    background-color: #333;
+    /* Dark background */
+    color: #fff;
+    /* Light text */
+    font-size: 1rem;
+    margin-bottom: 20px;
+    /* Spacing below dropdown */
+}
+
+/* Selected Year Div Styles */
+#selectedYear {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Globe Visualization Container */
+#globeViz {
+    background-color: #333;
+    /* Dark background */
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    /* Shadow for depth */
+    width: 100%;
+    /* Fixed height, adjust as needed */
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+}
+
+.scene-tooltip {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip {
+    font-family: "Space Mono", monospace;
+    background-color: black;
+    border: 4px solid rgb(105, 107, 0);
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    max-width: 300px;
+}
+/* Navigation Menu Styles */
+nav {
+    background-color: #333; /* Dark background for the menu */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display menu items inline */
+    margin-right: 20px; /* Spacing between menu items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ed6f2b; /* Color change on hover */
+}
+
+/* Social Media Links Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.social-media-links {
+    font-size: 1.5rem;
+}
+
+.social-media-links a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ed6f2b;
+}
+
+/* Font Awesome Icons */
+.fab {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for screens between 601px and 1024px */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Styles for screens larger than 1024px */
+}
+/* Default styles */
+nav ul li {
+    display: inline;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+}
+#blog-news {
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* Light text for readability */
+    padding: 20px;
+}
+
+#blog-news h2 {
+    text-align: center;
+    color: #ed6f2b; /* Accent color */
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-list article {
+    background-color: #333; /* Slightly lighter dark shade for articles */
+    color: #fff;
+    width: 30%; /* Adjusted for three-column layout */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+.article-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.article-content h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.article-content h3 a:hover {
+    color: #ed6f2b;
+}
+
+/* Responsive Adjustments for smaller screens */
+@media only screen and (max-width: 1024px) {
+    .article-list article {
+        width: 48%; /* Two-column layout for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .article-list article {
+        width: 100%; /* Single-column layout for mobile screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .article-list article {
+        width: 100%;
+    }
+}
+#comments-section {
+    background-color: #000000; /* Dark background */
+    color: #fff; /* Light text color */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    background-color: #000000; /* Slightly lighter dark shade for comments */
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#comment-form {
+    margin-top: 20px;
+}
+
+#comment-form label, 
+#comment-form input, 
+#comment-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #000000; /* Dark input backgrounds */
+    color: #fff; /* Light text */
+    border: none;
+    padding: 8px;
+}
+
+#comment-form button {
+    background-color: #ed6f2b; /* Accent color */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#comment-form button:hover {
+    background-color: #af5c1f; /* Darker shade for hover */
+}
